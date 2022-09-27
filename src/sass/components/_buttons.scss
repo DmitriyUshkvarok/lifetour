@@ -1,0 +1,78 @@
+// hero btn
+.hero-btn {
+  @include flexCenter();
+  width: 246px;
+  height: 60px;
+  background-color: $buttonsColor;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.58;
+  color: $whiteColor;
+  margin-bottom: 110px;
+  transition: $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonshover;
+  }
+}
+
+// tour buttons
+.place__btn {
+  width: 115px;
+  height: 30px;
+  @include flexCenter();
+  background-color: $buttonsColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: $whiteColor;
+  margin-right: 28px;
+  transition: $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonshover;
+  }
+}
+
+// swipper btn
+:root {
+  --swiper-navigation-size: 0px;
+}
+
+.swipper--tour-next,
+.swipper--tour-prev,
+.swipper--eduction-next,
+.swipper--eduction-prev,
+.swipper--gallery-next,
+.swipper--gallery-prev,
+.swipper--review-next,
+.swipper--review-prev {
+  @include flexCenter();
+  width: 37px;
+  height: 35px;
+  background-color: $buttonsColor;
+  font-size: --swiper-navigation-size;
+  fill: white;
+  cursor: pointer;
+}
+
+// feedback btn
+.contact__btn {
+  @include flexCenter();
+  background-color: $buttonsColor;
+  border: none;
+  cursor: pointer;
+  width: 246px;
+  height: 64px;
+  font-weight: 500;
+  line-height: 1.58;
+  color: $whiteColor;
+  transition: $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonshover;
+  }
+}

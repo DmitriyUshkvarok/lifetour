@@ -1,0 +1,42 @@
+.logo {
+  @include flexCenter();
+  margin-right: 84px;
+}
+
+.logo__image {
+  margin-right: 20px;
+}
+
+.logo__link {
+  color: $whiteColor;
+}
+
+.logo__icon {
+  fill: currentColor;
+}
+
+.logo__text--up {
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.22;
+  color: $whiteColor;
+}
+
+.logo__text--down {
+  font-size: 8px;
+  line-height: 1.25;
+  color: $whiteColor;
+}
+
+// footer
+.logo--footer,
+.text--up-footer,
+.text--down--footer {
+  color: $secondColor;
+}
+
+.icon--footer {
+  fill: currentColor;
+}

@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 190px;
+}
+
+.contacts {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.58;
+  color: $whiteColor;
+}
+
+.contacts-footer {
+  color: $secondColor;
+}

@@ -1,0 +1,54 @@
+.hero {
+  background-color: lightslategrey;
+  background-image: url("../images/hero-clouds.svg"), url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 500px, center;
+  background-size: contain, cover;
+  padding-top: 43px;
+  padding-bottom: 180px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .container {
+  position: relative;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: ("../images/hero-clouds.svg"),
+      url("../images/hero-2x.jpg");
+  }
+}
+
+.hero-text {
+  position: absolute;
+  top: 210px;
+  left: 0;
+  font-weight: 900;
+  font-size: 93px;
+  line-height: 1.21;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f5f9fc;
+  opacity: 0.2;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 1.22;
+  color: $whiteColor;
+  margin-bottom: 11px;
+}
+
+.hero-description {
+  max-width: 470px;
+  font-size: 19px;
+  line-height: 1.48;
+  color: $whiteColor;
+  margin-bottom: 40px;
+}

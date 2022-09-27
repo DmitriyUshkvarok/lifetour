@@ -1,0 +1,46 @@
+.footer {
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+.logo--footer {
+  color: $secondColor;
+}
+
+.icon--footer {
+  fill: currentColor;
+}
+
+.footer-top {
+  display: flex;
+  @include flexCenter();
+  margin-bottom: 14px;
+}
+
+.footer-midle {
+  @include flexCenter();
+  margin-bottom: 34px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 22px;
+}
+
+.social__link--footer {
+  background-color: transparent;
+  color: $secondColor;
+  border: 1px solid $secondColor;
+}
+
+.social-icon-footer {
+  fill: currentColor;
+}
+
+.footer-bottom {
+  display: flex;
+  @include flexCenter();
+  font-size: 12px;
+  line-height: 2.02;
+  color: $secondColor;
+}

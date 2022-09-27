@@ -1,0 +1,44 @@
+.navigation {
+  margin-right: 85px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 46px;
+}
+
+.nav-list__link {
+  position: relative;
+  color: $whiteColor;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: $trasition-cubic-bazier;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: $hoverNav;
+    transform: scale(0);
+    transition: $trasition-cubic-bazier;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scale(1);
+  }
+
+  &:hover,
+  &:focus {
+    color: $hoverNav;
+  }
+}
+
+// footer
+.footer--nav-link {
+  color: $secondColor;
+}

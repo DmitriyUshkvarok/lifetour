@@ -1,0 +1,23 @@
+.site-social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 17px;
+}
+
+.site-social-list__link {
+  @include flexCenter();
+  width: 21px;
+  height: 21px;
+  background-color: $buttonsColor;
+  transition: $trasition-cubic-bazier;
+  color: $whiteColor;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonshover;
+  }
+}
+
+.site-social-list__icon {
+  fill: currentColor;
+}

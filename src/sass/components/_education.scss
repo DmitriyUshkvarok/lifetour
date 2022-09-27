@@ -1,0 +1,148 @@
+.eduction {
+  // position: relative;
+  border-bottom: 1px solid #d9e7ea;
+}
+
+.eduction .container {
+  position: relative;
+}
+
+.learning-decor {
+  position: absolute;
+  top: -200px;
+  left: 0;
+}
+
+.learning-decor-text {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 1.22;
+  color: $secondColor;
+  opacity: 0.03;
+}
+
+.eduction-title {
+  margin-bottom: 29px;
+}
+
+.eduction__description {
+  max-width: 826px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 38px;
+}
+
+.eduction-btn-wrapper {
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.eduction__instructors {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24;
+  color: $secondColor;
+  margin-bottom: 33px;
+}
+
+.eduction__instructor-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.instuctor-list__item {
+  width: 230px;
+  height: 100%;
+  padding: 14px 14px 23px 14px;
+  box-shadow: 3px 3px 17px 3px rgba(33, 150, 243, 0.1);
+}
+
+.photo-wrapper {
+  margin-bottom: 22px;
+}
+
+.name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.instructor__social {
+  width: 24px;
+  height: 24px;
+  @include flexCenter();
+  border: 1px solid #9ac2e6;
+  transition: $trasition-cubic-bazier;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonshover;
+  }
+}
+
+.tour-icon {
+  fill: #000000;
+}
+
+.instructor__name {
+  max-width: 111px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.33;
+  color: #000000;
+}
+
+.instructor__description {
+  max-width: 203px;
+  font-size: 12px;
+  line-height: 1.34;
+  color: #000000;
+}
+
+.learning-title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24px;
+  color: $secondColor;
+  margin-bottom: 38px;
+}
+
+.learning-process {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 20px;
+}
+
+.learning-process__item {
+  position: relative;
+}
+
+.learning-process__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $buttonsColor;
+}
+
+.learning-process__item {
+  display: flex;
+  gap: 13px;
+}
+
+.learning-process_description {
+  font-size: 16px;
+  line-height: 23px;
+  color: $secondColor;
+}

@@ -1,0 +1,94 @@
+.photogaphy {
+  background-image: url("../images/mini-cloud-photography.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding-top: 87px;
+}
+
+.photogaphy .container {
+  position: relative;
+}
+
+.gallery-text-decor {
+  position: absolute;
+  top: 67px;
+  left: 0;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 1.22;
+  color: $secondColor;
+  opacity: 0.03;
+}
+
+.photography-description {
+  max-width: 696px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 45px;
+}
+
+.photography-description--text-bold {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.51;
+  color: #000000;
+}
+
+// ============FLEX=================
+// .photography-list {
+//   display: flex;
+//   column-gap: 3px;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .list-item--between {
+//   display: flex;
+//   flex-direction: column;
+//   row-gap: 3px;
+// }
+
+.gallery-title {
+  margin-bottom: 20px;
+}
+// ===========GRID==============
+
+.photography-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  // grid-template-columns: repeat(auto-fill,minmax(250px ,1fr));
+  gap: 5px;
+}
+
+.photography-list__item {
+  position: relative;
+  padding: 0px 0px 100% 0px;
+}
+
+.item--big {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.photography-list__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-btn-wrapper {
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
+
+

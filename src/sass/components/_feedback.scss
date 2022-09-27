@@ -1,0 +1,71 @@
+.feedback {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: dimgrey;
+  background-image: url("../images/review.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 315px;
+  padding-bottom: 280px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .feedback {
+    background-image: url("../images/review-2-x.jpg");
+  }
+}
+
+.page-title--feedback {
+  @include flexCenter();
+  color: $whiteColor;
+  margin-bottom: 10px;
+}
+
+.contacts__description {
+  @include flexCenter();
+  font-size: 16px;
+  line-height: 1.51;
+  color: $whiteColor;
+  text-shadow: 0px 0px 5px #000000;
+  margin-bottom: 45px;
+}
+
+.contacts-form {
+  width: 985px;
+  @include flexCenter();
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__name,
+.contact__tell {
+  @include flexCenter();
+  width: 354px;
+  height: 65px;
+  background-color: $whiteColor;
+  border: 1px solid rgba(2, 102, 193, 0.112);
+  padding: 20px 30px;
+  font-size: 16px;
+  line-height: 1.51;
+  color: $placeholderColor;
+  margin-right: 13px;
+}
+
+.contact__name {
+  &:focus {
+    outline: 3px solid $buttonshover;
+  }
+}
+
+.contact__tell {
+  margin-right: 18px;
+
+  &:focus {
+    outline: 3px solid $buttonshover;
+  }
+}
+

@@ -1,0 +1,53 @@
+.about {
+  padding-top: 126px;
+  padding-bottom: 90px;
+  background-image: url("../images/about.png"),
+    url("../images/mini-cloud-about-left.png");
+  background-repeat: no-repeat;
+  background-position: 0 -55px, right 0px;
+}
+
+.about-title {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about-list__item{
+  position: relative;
+}
+
+.about-decor-text {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 1.22;
+  color: $secondColor;
+  opacity: 0.03;
+}
+
+.about-list__item:first-of-type {
+  margin-bottom: 50px;
+}
+
+.about-subtitle {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24;
+  color: $secondColor;
+  margin-bottom: 25px;
+}
+
+.about-description {
+  max-width: 547px;
+  font-size: 14px;
+  line-height: 1.64;
+  color: #000000;
+}
