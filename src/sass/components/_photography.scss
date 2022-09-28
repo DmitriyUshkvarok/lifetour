@@ -91,4 +91,12 @@
   right: 0;
 }
 
+@media (max-width: 1270px) {
+.item--big {
+  grid-column: span 1;
+  grid-row: span 1;
+} 
+}
+
+
 

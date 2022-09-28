@@ -35,7 +35,7 @@
 }
 
 .contacts-form {
-  width: 985px;
+  max-width: 985px;
   @include flexCenter();
   margin-left: auto;
   margin-right: auto;
@@ -69,3 +69,17 @@
   }
 }
 
+@media (max-width: 1010px) {
+  .feedback {
+    padding-top: 150px;
+  }
+
+.page-title--feedback{
+  color: $secondColor;
+}
+
+  .contacts-form {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}

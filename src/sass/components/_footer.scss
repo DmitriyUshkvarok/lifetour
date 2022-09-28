@@ -44,3 +44,11 @@
   line-height: 2.02;
   color: $secondColor;
 }
+
+@media (max-width: 1235px) {
+  .footer-top {
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: flex-start;
+  }
+}

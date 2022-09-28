@@ -18,7 +18,7 @@
   align-items: flex-end;
 }
 
-.about-list__item{
+.about-list__item {
   position: relative;
 }
 
@@ -50,4 +50,32 @@
   font-size: 14px;
   line-height: 1.64;
   color: #000000;
+}
+
+@media (max-width: 1235px) {
+  .about {
+    position: relative;
+    overflow: hidden;
+    background-image: none;
+  }
+
+  .about:before {
+    content: "";
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/wp-content/uploads/2010/11/tandem.jpg);
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    background-image: url("../images/about.png");
+    background-repeat: no-repeat;
+  }
+
+  .about-list {
+    align-items: flex-start;
+  }
 }

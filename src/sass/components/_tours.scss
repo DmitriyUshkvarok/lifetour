@@ -14,7 +14,7 @@
 }
 
 .tour-list__item--one {
-  width: 384px;
+  max-width: 384px;
   background-image: linear-gradient(0deg, #000000 1%, rgba(0, 0, 0, 0) 60%),
     url("../images/tour-1-.jpg");
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 }
 
 .tour-list__item--two {
-  width: 384px;
+  max-width: 384px;
   background-image: linear-gradient(0deg, #000000 1%, rgba(0, 0, 0, 0) 60%),
     url("../images/tour-2.jpg");
   background-repeat: no-repeat;
@@ -56,7 +56,7 @@
 }
 
 .tour-list__item--three {
-  width: 384px;
+  max-width: 384px;
   background-image: linear-gradient(0deg, #000000 1%, rgba(0, 0, 0, 0) 60%),
     url("../images/tour-3.jpg");
   background-repeat: no-repeat;
@@ -97,7 +97,6 @@
   right: 0;
   z-index: -1;
 }
-
 
 .swip-btn-wrapper {
   width: 100px;
@@ -200,4 +199,23 @@
 
 .tour__all-icon {
   margin-left: 12px;
+}
+
+@media (max-width: 1235px) {
+  .place {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .details {
+    flex-direction: column; 
+  }
+
+  .details__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .swip-btn-wrapper {
+    right: 0;
+  }
 }
