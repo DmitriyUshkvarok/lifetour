@@ -49,6 +49,14 @@
   .footer-top {
     flex-direction: column;
     row-gap: 50px;
-    align-items: flex-start;
+    @include flexCenter();
   }
+}
+
+@media (max-width: 690px) {
+ .nav-list--footer{
+  gap:25px;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
 }

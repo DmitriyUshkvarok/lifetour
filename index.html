@@ -8,6 +8,8 @@
     <title>LIFETOUR</title>
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,800&display=swap"
       rel="stylesheet" />
@@ -35,22 +37,22 @@
           <nav class="navigation">
             <ul class="nav-list">
               <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Туры</a>
+                <a class="nav-list__link" href="#tour">Туры</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Обучение</a>
+                <a class="nav-list__link" href="#eduction">Обучение</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link" href="#">О нас</a>
+                <a class="nav-list__link" href="#about">О нас</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Отзывы</a>
+                <a class="nav-list__link" href="#review">Отзывы</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Фотографии</a>
+                <a class="nav-list__link" href="#gallery">Фотографии</a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Контакты</a>
+                <a class="nav-list__link" href="#feedback">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -83,16 +85,23 @@
       </div>
     </section>
     <!-- tour -->
-    <section class="tour">
+    <section class="tour" id="tour">
       <div class="container">
         <span class="tour-decor-text">Ближайшие туры</span>
         <span class="background-decor"><img src="./images/tour-decor.png"
             alt=""></span>
         <h2 class="page-title tour--title">Ближайшие туры</h2>
-
-
+        <div class="swip-btn-wrapper tour-btn-wrapper">
+          <div class="swipper--tour-prev"><svg
+              class="swipper-btn-prew" width="13" height="13">
+              <use xlink:href="./images/sprite.svg#icon-strelka-levo"></use>
+            </svg></div>
+          <div class="swipper--tour-next"><svg
+              class="swipper-btn-next" width="13" height="13">
+              <use xlink:href="./images/sprite.svg#icon-strelka-pravo"></use>
+            </svg></div>
+        </div>
         <ul class="tour-list">
-
           <!-- =======one============ -->
           <div class="swiper tour-slide">
             <div class="swiper-wrapper">
@@ -279,17 +288,7 @@
               </div>
             </div>
           </ul>
-          <div class="swip-btn-wrapper">
-            <div class="swipper--tour-prev"><svg
-                class="swipper-btn-prew" width="13" height="13">
-                <use xlink:href="./images/sprite.svg#icon-strelka-levo"></use>
-              </svg></div>
-            <div class="swipper--tour-next"><svg
-                class="swipper-btn-next" width="13" height="13">
-                <use xlink:href="./images/sprite.svg#icon-strelka-pravo"></use>
-              </svg></div>
-            
-          </div>
+
           <!-- all tour -->
           <a class="all-tour" href="">Показать все туры <svg
               class="tour__all-icon" width="13" height="13">
@@ -299,7 +298,7 @@
       </div>
     </section>
     <!-- eduction -->
-    <section class="eduction">
+    <section class="eduction" id="eduction">
       <span class="learning-decor"><img src="./images/mini-cloud-education.png"
           alt=""></span>
       <div class="container">
@@ -314,7 +313,7 @@
         </p>
         <h3 class="eduction__instructors">Наши инструкторы</h3>
         <div class="swip-btn-wrapper eduction-btn-wrapper">
-            <div class="swipper--eduction-prev"><svg
+          <div class="swipper--eduction-prev"><svg
               class="swipper-btn-prew" width="13" height="13">
               <use xlink:href="./images/sprite.svg#icon-strelka-levo"></use>
             </svg></div>
@@ -322,126 +321,129 @@
               class="swipper-btn-next" width="13" height="13">
               <use xlink:href="./images/sprite.svg#icon-strelka-pravo"></use>
             </svg></div>
-        
+
         </div>
         <ul class="eduction__instructor-list">
           <div class="swiper eduction-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-              <li class="instuctor-list__item">
-                <div class="photo-wrapper">
-                  <img class="instructor-list__img"
-                    srcset="./images/eduction-2-x.jpg 2x"
-                    src="./images/eduction.jpg" alt=""
-                    width="203" />
-                </div>
-                <div class="name-wrapper">
-                  <h4 class="instructor__name">Александр Прокофьев</h4>
-                  <a class="instructor__social" href=""><svg
-                      class="site-social-list__icon tour-icon" width="12"
-                      height="12">
-                      <use xlink:href="./images/sprite.svg#icon-vk"></use>
-                    </svg></a>
-                </div>
-                <p class="instructor__description">Любит природу. Строгий,
-                  справедливый и внимательный инструктор,
-                  веселый и общительный человек
-                </p>
-              </li>
+                <li class="instuctor-list__item">
+                  <div class="photo-wrapper">
+                    <img class="instructor-list__img"
+                      srcset="./images/eduction-2-x.jpg 2x"
+                      src="./images/eduction.jpg" alt=""
+                      width="203" />
+                  </div>
+                  <div class="name-wrapper">
+                    <h4 class="instructor__name">Александр Прокофьев</h4>
+                    <a class="instructor__social" href=""><svg
+                        class="site-social-list__icon tour-icon" width="12"
+                        height="12">
+                        <use xlink:href="./images/sprite.svg#icon-vk"></use>
+                      </svg></a>
+                  </div>
+                  <p class="instructor__description">Любит природу. Строгий,
+                    справедливый и внимательный инструктор,
+                    веселый и общительный человек
+                  </p>
+                </li>
               </div>
               <div class="swiper-slide">
-              <li class="instuctor-list__item">
-                <div class="photo-wrapper">
-                  <img class="instructor-list__img"
-                    srcset="./images/eduction-2-2-x.jpg"
-                    src="./images/eduction-2.jpg" alt=""
-                    width="203" />
-                </div>
-                <div class="name-wrapper">
-                  <h4 class="instructor__name">Светлана
-                    Афиногенова</h4>
-                  <a class="instructor__social" href=""><svg
-                      class="site-social-list__icon tour-icon" width="12"
-                      height="12">
-                      <use xlink:href="./images/sprite.svg#icon-vk"></use>
-                    </svg></a>
-                </div>
-                <p class="instructor__description">Видеть мир вокруг, познавать
-                  его
-                  опасности, смотреть сквозь стены, находить
-                  друг друга, становиться ближе, чувствовать —
-                  в этом назначение жизни.</p>
-              </li>
+                <li class="instuctor-list__item">
+                  <div class="photo-wrapper">
+                    <img class="instructor-list__img"
+                      srcset="./images/eduction-2-2-x.jpg"
+                      src="./images/eduction-2.jpg" alt=""
+                      width="203" />
+                  </div>
+                  <div class="name-wrapper">
+                    <h4 class="instructor__name">Светлана
+                      Афиногенова</h4>
+                    <a class="instructor__social" href=""><svg
+                        class="site-social-list__icon tour-icon" width="12"
+                        height="12">
+                        <use xlink:href="./images/sprite.svg#icon-vk"></use>
+                      </svg></a>
+                  </div>
+                  <p class="instructor__description">Видеть мир вокруг,
+                    познавать
+                    его
+                    опасности, смотреть сквозь стены, находить
+                    друг друга, становиться ближе, чувствовать —
+                    в этом назначение жизни.</p>
+                </li>
               </div>
               <div class="swiper-slide">
-              <li class="instuctor-list__item">
-                <div class="photo-wrapper">
-                  <img class="instructor-list__img"
-                    srcset="./images/eduction-3-2-x.jpg"
-                    src="./images/eduction-3.jpg" alt=""
-                    width="203" />
-                </div>
-                <div class="name-wrapper">
-                  <h4 class="instructor__name">Надежда
-                    Колесниченко</h4>
-                  <a class="instructor__social" href=""><svg
-                      class="site-social-list__icon tour-icon" width="12"
-                      height="12">
-                      <use xlink:href="./images/sprite.svg#icon-vk"></use>
-                    </svg></a>
-                </div>
-                <p class="instructor__description">Участники говорят, что
-                  Надежда
-                  ответственная, приятная в общении, и в
-                  поездках с ней чувствуешь себя спокойно и
-                  уверенно.</p>
-              </li>
+                <li class="instuctor-list__item">
+                  <div class="photo-wrapper">
+                    <img class="instructor-list__img"
+                      srcset="./images/eduction-3-2-x.jpg"
+                      src="./images/eduction-3.jpg" alt=""
+                      width="203" />
+                  </div>
+                  <div class="name-wrapper">
+                    <h4 class="instructor__name">Надежда
+                      Колесниченко</h4>
+                    <a class="instructor__social" href=""><svg
+                        class="site-social-list__icon tour-icon" width="12"
+                        height="12">
+                        <use xlink:href="./images/sprite.svg#icon-vk"></use>
+                      </svg></a>
+                  </div>
+                  <p class="instructor__description">Участники говорят, что
+                    Надежда
+                    ответственная, приятная в общении, и в
+                    поездках с ней чувствуешь себя спокойно и
+                    уверенно.</p>
+
+                </li>
               </div>
               <div class="swiper-slide">
-              <li class="instuctor-list__item">
-                <div class="photo-wrapper">
-                  <img class="instructor-list__img"
-                    srcset="./images/eduction-4-2-x.jpg"
-                    src="./images/eduction-4.jpg" alt=""
-                    width="203" />
-                </div>
-                <div class="name-wrapper">
-                  <h4 class="instructor__name">Федор
-                    Кайгородов</h4>
-                  <a class="instructor__social" href=""><svg
-                      class="site-social-list__icon tour-icon" width="12"
-                      height="12">
-                      <use xlink:href="./images/sprite.svg#icon-vk"></use>
-                    </svg></a>
-                </div>
-                <p class="instructor__description">Опыт походов: Ходит в походы
-                  с
-                  2001 года. В России побывал в горных районах
-                  Хибины, приэльбрусье, Архыз, много
-                  путешествует по Европе.</p>
-              </li>
+                <li class="instuctor-list__item">
+                  <div class="photo-wrapper">
+                    <img class="instructor-list__img"
+                      srcset="./images/eduction-4-2-x.jpg"
+                      src="./images/eduction-4.jpg" alt=""
+                      width="203" />
+                  </div>
+                  <div class="name-wrapper">
+                    <h4 class="instructor__name">Федор
+                      Кайгородов</h4>
+                    <a class="instructor__social" href=""><svg
+                        class="site-social-list__icon tour-icon" width="12"
+                        height="12">
+                        <use xlink:href="./images/sprite.svg#icon-vk"></use>
+                      </svg></a>
+                  </div>
+                  <p class="instructor__description">Опыт походов: Ходит в
+                    походы
+                    с
+                    2001 года. В России побывал в горных районах
+                    Хибины, приэльбрусье, Архыз, много
+                    путешествует по Европе.</p>
+                </li>
               </div>
               <div class="swiper-slide">
-              <li class="instuctor-list__item">
-                <div class="photo-wrapper">
-                  <img class="instructor-list__img"
-                    srcset="./images/eduction-5-2-x.jpg"
-                    src="./images/eduction-5.jpg" alt=""
-                    width="203" />
-                </div>
-                <div class="name-wrapper">
-                  <h4 class="instructor__name">Сергей
-                    Денисов</h4>
-                  <a class="instructor__social" href=""><svg
-                      class="site-social-list__icon tour-icon" width="12"
-                      height="12">
-                      <use xlink:href="./images/sprite.svg#icon-vk"></use>
-                    </svg></a>
-                </div>
-                <p class="instructor__description">Профессиональный гид,
-                  путешественник, спортсмен, альпинист.
-                  Блестящий рассказчик, собеседник; с ним не скучно.</p>
-              </li>
+                <li class="instuctor-list__item">
+                  <div class="photo-wrapper">
+                    <img class="instructor-list__img"
+                      srcset="./images/eduction-5-2-x.jpg"
+                      src="./images/eduction-5.jpg" alt=""
+                      width="203" />
+                  </div>
+                  <div class="name-wrapper">
+                    <h4 class="instructor__name">Сергей
+                      Денисов</h4>
+                    <a class="instructor__social" href=""><svg
+                        class="site-social-list__icon tour-icon" width="12"
+                        height="12">
+                        <use xlink:href="./images/sprite.svg#icon-vk"></use>
+                      </svg></a>
+                  </div>
+                  <p class="instructor__description">Профессиональный гид,
+                    путешественник, спортсмен, альпинист.
+                    Блестящий рассказчик, собеседник; с ним не скучно.</p>
+                </li>
               </div>
             </div>
           </div>
@@ -482,7 +484,7 @@
       </div>
     </section>
     <!-- about -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <ul class="about-list">
           <li class="about-list__item">
@@ -509,106 +511,122 @@
             </p>
           </li>
         </ul>
-      </section>
-      <!-- review -->
-      <section class="review">
-        <div class="container">
-          <span class="review-text-decor">Отзывы</span>
-          <h2 class="page-title reviews-title">Отзывы</h2>
-          <div class="review-btn-wrapper">
-             <div class="swipper--review-prev"><svg
+      </div>
+    </section>
+    <!-- review -->
+    <section class="review" id="review">
+      <div class="container">
+        <span class="review-text-decor">Отзывы</span>
+        <h2 class="page-title reviews-title">Отзывы</h2>
+        <div class="review-btn-wrapper">
+          <div class="swipper--review-prev"><svg
               class="swipper-btn-prew" width="13" height="13">
               <use xlink:href="./images/sprite.svg#icon-strelka-levo"></use>
             </svg></div>
-              <div class="swipper--review-next"><svg
+          <div class="swipper--review-next"><svg
               class="swipper-btn-next" width="13" height="13">
               <use xlink:href="./images/sprite.svg#icon-strelka-pravo"></use>
             </svg></div>
-         
-            </div>
-          <ul class="review-list">
-             <div class="swiper review-slider">
-               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-            <li class="review-list__item">
-              <div class="user-info">
-                <img class="review-list__img" src="./images/abot-1.jpg" alt=""
-                  />
-                <div class="info-container">
-                  <h3 class="review-list__name">Фролов Александр</h3>
-                  <p class="review-list__user-info">28 лет, Москва</p>
-                </div>
-              </div>
-              <p class="review-list__text">
-                Осенью ходили в поход с друзьями. Впечатления исключительно
-                положительные! Инструкторы - настоящие эксперты - всему научили,
-                все показали. Рассказали истории о всех местах, которые мы так
-                или
-                иначе посещали.
-              </p>
-              <p class="review-list__quote">
-                С уверенностью могу разделить жизнь на до этого похода и после.
-                Настолько сильно не отдыхал душой и телом никогда. Всем
-                рекомендую!
-              </p>
-            </li>
-            </div>
-             <div class="swiper-slide">
-            <li class="review-list__item">
-              <div class="user-info">
-                <img class="review-list__img" src="./images/about-2.jpg" alt=""
-                  />
-                <div class="info-container">
-                  <h3 class="review-list__name">Светлана Олейник</h3>
-                  <p class="review-list__user-info">25 лет, Владивосток</p>
-                </div>
-              </div>
-              <p class="review-list__text">
-                Хороший полноценный поход с разнообразными локациями. В начале
-                дорога идет по лыжне, далее прошли мимо полигона, по болотам, у
-                озер и лесных ручьев, остатков дач конца 19 века. Инструктор
-                Федор
-                Кайгородов добросовестный и внимательный к технике безопасности
-                и
-                своим туристам.
-              </p>
-              <p class="review-list__quote">
-                Совет для будущих походников: важно соблюсти рекомендации в
-                памятке.
-              </p>
-            </li>
-            </div>
-             <div class="swiper-slide">
-            <li class="review-list__item">
-              <div class="user-info">
-                <img class="review-list__img" src="./images/image-1.jpg" alt=""
-                  />
-                <div class="info-container">
-                  <h3 class="review-list__name">Евгения Баженова</h3>
-                  <p class="review-list__user-info">23 года, Кастрома</p>
-                </div>
-              </div>
-              <p class="review-list__text">
-                Поход понравился!! Ранее не ходила на такие длинные дистанции. В
-                первый день прошли около 30 км, физически я устала на 18м,
-                поэтому
-                не была уверена, пройду ли до конца. Но шла и шла впереди, не
-                плелась в конце группы. К моему удивлению второй день прошел для
-                меня легче, чем ожидала, видимо дело привычки.
-              </p>
-              <p class="review-list__quote">
-                Спасибо ребятам и инструкторам за помощь и поддержку!
-              </p>
-            </li>
-            </div>
-            </div>
-            </div>
-          </ul>
+
         </div>
-      </section>
-      <!-- =========flex========== -->
-      <!-- photography -->
-      <!-- <section class="photogaphy">
+        <ul class="review-list">
+          <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <li class="review-list__item">
+                  <div class="user-info">
+                    <img class="review-list__img" src="./images/abot-1.jpg"
+                      alt=""
+                      />
+                    <div class="info-container">
+                      <h3 class="review-list__name">Фролов Александр</h3>
+                      <p class="review-list__user-info">28 лет, Москва</p>
+                    </div>
+                  </div>
+                  <p class="review-list__text">
+                    Осенью ходили в поход с друзьями. Впечатления
+                    исключительно
+                    положительные! Инструкторы - настоящие эксперты - всему
+                    научили,
+                    все показали. Рассказали истории о всех местах, которые мы
+                    так
+                    или
+                    иначе посещали.
+                  </p>
+                  <p class="review-list__quote">
+                    С уверенностью могу разделить жизнь на до этого похода и
+                    после.
+                    Настолько сильно не отдыхал душой и телом никогда. Всем
+                    рекомендую!
+                  </p>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="review-list__item">
+                  <div class="user-info">
+                    <img class="review-list__img" src="./images/about-2.jpg"
+                      alt=""
+                      />
+                    <div class="info-container">
+                      <h3 class="review-list__name">Светлана Олейник</h3>
+                      <p class="review-list__user-info">25 лет, Владивосток</p>
+                    </div>
+                  </div>
+                  <p class="review-list__text">
+                    Хороший полноценный поход с разнообразными локациями. В
+                    начале
+                    дорога идет по лыжне, далее прошли мимо полигона, по
+                    болотам, у
+                    озер и лесных ручьев, остатков дач конца 19 века.
+                    Инструктор
+                    Федор
+                    Кайгородов добросовестный и внимательный к технике
+                    безопасности
+                    и
+                    своим туристам.
+                  </p>
+                  <p class="review-list__quote">
+                    Совет для будущих походников: важно соблюсти рекомендации
+                    в
+                    памятке.
+                  </p>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="review-list__item">
+                  <div class="user-info">
+                    <img class="review-list__img" src="./images/image-1.jpg"
+                      alt=""
+                      />
+                    <div class="info-container">
+                      <h3 class="review-list__name">Евгения Баженова</h3>
+                      <p class="review-list__user-info">23 года, Кастрома</p>
+                    </div>
+                  </div>
+                  <p class="review-list__text">
+                    Поход понравился!! Ранее не ходила на такие длинные
+                    дистанции. В
+                    первый день прошли около 30 км, физически я устала на 18м,
+                    поэтому
+                    не была уверена, пройду ли до конца. Но шла и шла впереди,
+                    не
+                    плелась в конце группы. К моему удивлению второй день
+                    прошел для
+                    меня легче, чем ожидала, видимо дело привычки.
+                  </p>
+                  <p class="review-list__quote">
+                    Спасибо ребятам и инструкторам за помощь и поддержку!
+                  </p>
+                </li>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <!-- =========flex========== -->
+    <!-- photography -->
+    <!-- <section class="photogaphy">
     <h2 class="page-title">Фотогалерея</h2>
     <p class="photography-description">
       Добавляйте фото в Instagram с хэштегом #лайфтур, а также отмечайте нас
@@ -634,167 +652,190 @@
       </li>
     </ul>
   </section> -->
-      <!-- ========GRID============== -->
-      <section class="photogaphy">
-        <div class="container">
-          <span class="gallery-text-decor">Фотогалерея</span>
-          <h2 class="page-title gallery-title">Фотогалерея</h2>
-          <p class="photography-description">
-            Добавляйте фото в Instagram с хэштегом <b
-              class="photography-description--text-bold">#лайфтур,</b> а также
-            отмечайте нас
-            на фото. Лучшие фотографии украсят этот раздел нашего сайта.
-          </p>
-          <div class="swip-btn-wrapper gallery-btn-wrapper">
-              <div class="swipper--gallery-prev"><svg
-                class="swipper-btn-prew" width="13" height="13">
-                <use xlink:href="./images/sprite.svg#icon-strelka-levo"></use>
-              </svg></div>
-            <div class="swipper--gallery-next"><svg
-                class="swipper-btn-next" width="13" height="13">
-                <use xlink:href="./images/sprite.svg#icon-strelka-pravo"></use>
-              </svg></div>
-          
-          </div>
-        </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- 1 -->
-            <div class="swiper-slide">
-              <ul class="photography-list">
-                <li class="photography-list__item item--big">
-                  <img srcset="./images/gallery-1-2-x.jpg 2x"
-                    src="./images/gallery-1.jpg" alt="" />
-                </li>
-                <li class="photography-list__item">
-                  <img srcset="./images/gallery-2-2-x.jpg 2x"
-                    src="./images/gallery-2.jpg" alt="" />
-                </li>
-                <li class="photography-list__item item--big">
-                  <img srcset="./images/gallery-4-2-x.jpg 2x"
-                    src="./images/gallery-4.jpg" alt="" />
-                </li>
-                <li class="photography-list__item">
-                  <img srcset="./images/gallery-5-2-x.jpg 2x"
-                    src="./images/gallery-5.jpg" alt="" />
-                </li>
-                <li class="photography-list__item item--big">
-                  <img srcset="./images/gallery-7-2-x.jpg 2x"
-                    src="./images/gallery-7.jpg" alt="" />
-                </li>
-                <li class="photography-list__item"><img
-                    srcset="./images/gallery-3-2-x.jpg 2x"
-                    src="./images/gallery-3.jpg"
-                    alt="" />
-                </li>
-                <li class="photography-list__item"><img
-                    srcset="./images/gallery-6-2-x.jpg 2x"
-                    src="./images/gallery-6.jpg"
-                    alt="" />
-                </li>
-              </ul>
-            </div>
-            <!-- 2 -->
-            <div class="swiper-slide">
-              <ul class="photography-list">
-                <li class="photography-list__item item--big">
-                  <img srcset="./images/gallery-1-2-x.jpg 2x"
-                    src="./images/gallery-1.jpg" alt="" />
-                </li>
-                <li class="photography-list__item">
-                  <img srcset="./images/gallery-2-2-x.jpg 2x"
-                    src="./images/gallery-2.jpg" alt="" />
-                </li>
-                <li class="photography-list__item item--big">
-                  <img srcset="./images/gallery-4-2-x.jpg 2x"
-                    src="./images/gallery-4.jpg" alt="" />
-                </li>
-                <li class="photography-list__item">
-                  <img srcset="./images/gallery-5-2-x.jpg 2x"
-                    src="./images/gallery-5.jpg" alt="" />
-                </li>
-                <li class="photography-list__item item--big">
-                  <img srcset="./images/gallery-7-2-x.jpg 2x"
-                    src="./images/gallery-7.jpg" alt="" />
-                </li>
-                <li class="photography-list__item"><img
-                    srcset="./images/gallery-3-2-x.jpg 2x"
-                    src="./images/gallery-3.jpg"
-                    alt="" />
-                </li>
-                <li class="photography-list__item"><img
-                    srcset="./images/gallery-6-2-x.jpg 2x"
-                    src="./images/gallery-6.jpg"
-                    alt="" />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- feedback -->
-      <section class="feedback">
-        <h2 class="page-title page-title--feedback">Остались вопросы?</h2>
-        <p class="contacts__description">
-          Заполните форму и наш оператор свяжется с вами для консультации.
+    <!-- ========GRID============== -->
+    <section class="photogaphy" id="gallery">
+      <div class="container">
+        <span class="gallery-text-decor">Фотогалерея</span>
+        <h2 class="page-title gallery-title">Фотогалерея</h2>
+        <p class="photography-description">
+          Добавляйте фото в Instagram с хэштегом <b
+            class="photography-description--text-bold">#лайфтур,</b> а также
+          отмечайте нас
+          на фото. Лучшие фотографии украсят этот раздел нашего сайта.
         </p>
-        <form class="contacts-form">
-          <div class="fedback-form-group">
-            <input class="contact__name" type="text" name="name"
-              placeholder="Как к вам обращаться?" />
+        <div class="swip-btn-wrapper gallery-btn-wrapper">
+          <div class="swipper--gallery-prev"><svg
+              class="swipper-btn-prew" width="13" height="13">
+              <use xlink:href="./images/sprite.svg#icon-strelka-levo"></use>
+            </svg></div>
+          <div class="swipper--gallery-next"><svg
+              class="swipper-btn-next" width="13" height="13">
+              <use xlink:href="./images/sprite.svg#icon-strelka-pravo"></use>
+            </svg></div>
+
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- 1 -->
+          <div class="swiper-slide">
+            <ul class="photography-list">
+              <li class="photography-list__item item--big">
+                <a data-caption data-fancybox="gallery"
+                  href="./images/gallery-1-2-x.jpg#1">
+                  <img id="1" srcset="./images/gallery-1-2-x.jpg 2x"
+                    src="./images/gallery-1.jpg" alt="" />
+                </a>
+              </li>
+              <li class="photography-list__item">
+                <a data-caption data-fancybox="gallery"
+                  href="./images/gallery-2-2-x.jpg#2">
+                <img id="2" srcset="./images/gallery-2-2-x.jpg 2x"
+                  src="./images/gallery-2.jpg" alt="" />
+                </a>
+              </li>
+              <li class="photography-list__item item--big">
+                <a data-caption data-fancybox="gallery"
+                  href="./images/gallery-4-2-x.jpg#3">
+                <img id="3" srcset="./images/gallery-4-2-x.jpg 2x"
+                  src="./images/gallery-4.jpg" alt="" />
+                </a>
+              </li>
+              <li class="photography-list__item">
+                <a data-caption data-fancybox="gallery"
+                  href="./images/gallery-5-2-x.jpg#4">
+                <img id="4" srcset="./images/gallery-5-2-x.jpg 2x"
+                  src="./images/gallery-5.jpg" alt="" />
+                </a>
+              </li>
+              <li class="photography-list__item item--big">
+                 <a data-caption data-fancybox="gallery"
+                  href="./images/gallery-7-2-x.jpg#5">
+                <img id="5" srcset="./images/gallery-7-2-x.jpg 2x"
+                  src="./images/gallery-7.jpg" alt="" />
+                 </a>
+              </li>
+              <li class="photography-list__item">
+                  <a data-caption data-fancybox="gallery"
+                  href="./images/gallery-3-2-x.jpg#6">
+                <img
+                  id="6"
+                  srcset="./images/gallery-3-2-x.jpg 2x"
+                  src="./images/gallery-3.jpg"
+                  alt="" />
+                  </a>
+              </li>
+              <li class="photography-list__item">
+                   <a data-caption data-fancybox="gallery"
+                  href="./images/gallery-6-2-x.jpg#7">
+                <img id="7"
+                  srcset="./images/gallery-6-2-x.jpg 2x"
+                  src="./images/gallery-6.jpg"
+                  alt="" />
+                   </a>
+              </li>
+            </ul>
           </div>
-          <div class="fedback-form-group">
-            <input class="contact__tell" type="tel" name="phone"
-              placeholder="Телефон" />
+          <!-- 2 -->
+          <div class="swiper-slide">
+            <ul class="photography-list">
+              <li class="photography-list__item item--big">
+                <img srcset="./images/gallery-1-2-x.jpg 2x"
+                  src="./images/gallery-1.jpg" alt="" />
+              </li>
+              <li class="photography-list__item">
+                <img srcset="./images/gallery-2-2-x.jpg 2x"
+                  src="./images/gallery-2.jpg" alt="" />
+              </li>
+              <li class="photography-list__item item--big">
+                <img srcset="./images/gallery-4-2-x.jpg 2x"
+                  src="./images/gallery-4.jpg" alt="" />
+              </li>
+              <li class="photography-list__item">
+                <img srcset="./images/gallery-5-2-x.jpg 2x"
+                  src="./images/gallery-5.jpg" alt="" />
+              </li>
+              <li class="photography-list__item item--big">
+                <img srcset="./images/gallery-7-2-x.jpg 2x"
+                  src="./images/gallery-7.jpg" alt="" />
+              </li>
+              <li class="photography-list__item"><img
+                  srcset="./images/gallery-3-2-x.jpg 2x"
+                  src="./images/gallery-3.jpg"
+                  alt="" />
+              </li>
+              <li class="photography-list__item"><img
+                  srcset="./images/gallery-6-2-x.jpg 2x"
+                  src="./images/gallery-6.jpg"
+                  alt="" />
+              </li>
+            </ul>
           </div>
-          <button class="contact__btn" type="submit">Отправить</button>
-        </form>
-      </section>
-      <!-- footer -->
-      <footer class="footer">
-        <div class="container">
-          <!-- footer top -->
-          <div class="footer-top">
-            <!-- logo -->
-            <a class="logo__link logo--footer" href="">
-              <div class="logo">
-                <div class="logo__image"><svg class="logo__icon icon--footer"
-                    width="62" height="62">
-                    <use xlink:href="./images/sprite.svg#icon-logo"></use>
-                  </svg></div>
-                <div class="logo__text">
-                  <p class="logo__text--up text--up-footer">Lifetour</p>
-                  <p class="logo__text--down text--down--footer">Организация
-                    походов в горы</p>
-                </div>
+        </div>
+      </div>
+    </section>
+    <!-- feedback -->
+    <section class="feedback" id="feedback">
+      <h2 class="page-title page-title--feedback">Остались вопросы?</h2>
+      <p class="contacts__description">
+        Заполните форму и наш оператор свяжется с вами для консультации.
+      </p>
+      <form class="contacts-form">
+        <div class="fedback-form-group">
+          <input class="contact__name" type="text" name="name"
+            placeholder="Как к вам обращаться?" />
+        </div>
+        <div class="fedback-form-group">
+          <input class="contact__tell" type="tel" name="phone"
+            placeholder="Телефон" />
+        </div>
+        <button class="contact__btn" type="submit">Отправить</button>
+      </form>
+    </section>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <!-- footer top -->
+        <div class="footer-top">
+          <!-- logo -->
+          <a class="logo__link logo--footer" href="">
+            <div class="logo">
+              <div class="logo__image"><svg class="logo__icon icon--footer"
+                  width="62" height="62">
+                  <use xlink:href="./images/sprite.svg#icon-logo"></use>
+                </svg></div>
+              <div class="logo__text">
+                <p class="logo__text--up text--up-footer">Lifetour</p>
+                <p class="logo__text--down text--down--footer">Организация
+                  походов в горы</p>
               </div>
-            </a>
-            <!-- navigation -->
-            <nav class="navigation">
-              <ul class="nav-list">
-                <li class="nav-list__item">
-                  <a class="nav-list__link footer--nav-link" href="#">Туры</a>
-                </li>
-                <li class="nav-list__item">
-                  <a class="nav-list__link footer--nav-link" href="#">Обучение</a>
-                </li>
-                <li class="nav-list__item">
-                  <a class="nav-list__link footer--nav-link" href="#">О нас</a>
-                </li>
-                <li class="nav-list__item">
-                  <a class="nav-list__link footer--nav-link" href="#">Отзывы</a>
-                </li>
-                <li class="nav-list__item">
-                  <a class="nav-list__link footer--nav-link" href="#">Фотографии</a>
-                </li>
-                <li class="nav-list__item">
-                  <a class="nav-list__link footer--nav-link" href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- contacts -->
-            <div class="contacts contacts-footer">8 800 725 32 32</div>
-          </header>
+            </div>
+          </a>
+          <!-- navigation -->
+          <nav class="navigation">
+            <ul class="nav-list nav-list--footer">
+              <li class="nav-list__item nav-list__item--footer">
+                <a class="nav-list__link footer--nav-link" href="#tour">Туры</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link footer--nav-link" href="#eduction">Обучение</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link footer--nav-link" href="#about">О нас</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link footer--nav-link" href="#review">Отзывы</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link footer--nav-link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link footer--nav-link" href="#feedback">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- contacts -->
+          <div class="contacts contacts-footer">8 800 725 32 32</div>
         </div>
         <!-- footer midle -->
         <div class="footer-midle">
@@ -827,6 +868,9 @@
     <script src="./src/main.js/tour-swipper.js"></script>
     <script src="./src/main.js/eduction.js"></script>
     <script src="./src/main.js/review.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./src/main.js/fancybox.js"></script>
     <script src="./src/main.js/gallery-slider.js"></script>
   </body>
 

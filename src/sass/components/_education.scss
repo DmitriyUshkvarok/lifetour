@@ -124,7 +124,7 @@
 }
 
 .learning-process__item::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -27px;
@@ -152,5 +152,58 @@
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .eduction__instructor-list {
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .instructor__name {
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  .eduction-btn-wrapper {
+    top: 20%;
+  }
+}
+
+@media (max-width: 690px) {
+  .eduction {
+    border-bottom: none;
+  }
+
+  .learning-process {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eduction-btn-wrapper {
+    top: 23%;
+    left: 8%;
+  }
+}
+
+@media (max-width: 469px) {
+  .eduction-btn-wrapper {
+    top: 25%;
+  }
+}
+
+@media (max-width: 405px) {
+  .eduction-btn-wrapper {
+    top: 26%;
+  }
+}
+
+@media (max-width: 346px) {
+  .eduction-btn-wrapper {
+    top: 27%;
+    left: 9%;
   }
 }

@@ -1,8 +1,7 @@
 .about {
   padding-top: 126px;
   padding-bottom: 90px;
-  background-image: url("../images/about.png"),
-    url("../images/mini-cloud-about-left.png");
+  background-image: url('../images/about.png'), url('../images/mini-cloud-about-left.png');
   background-repeat: no-repeat;
   background-position: 0 -55px, right 0px;
 }
@@ -60,8 +59,8 @@
   }
 
   .about:before {
-    content: "";
-    content: "";
+    content: '';
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -71,11 +70,18 @@
     height: 100%;
     opacity: 0.4;
     z-index: -1;
-    background-image: url("../images/about.png");
+    background-image: url('../images/about.png');
     background-repeat: no-repeat;
   }
 
   .about-list {
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 690px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 170px;
   }
 }

@@ -42,3 +42,17 @@
 .footer--nav-link {
   color: $secondColor;
 }
+
+@media (max-width: 1235px) {
+.navigation {
+  margin-right: 0;
+}
+}
+
+@media (max-width: 690px) {
+ .nav-list{
+  gap:25px;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+}

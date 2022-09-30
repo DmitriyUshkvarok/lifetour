@@ -16,7 +16,7 @@
 .tour-list__item--one {
   max-width: 384px;
   background-image: linear-gradient(0deg, #000000 1%, rgba(0, 0, 0, 0) 60%),
-    url("../images/tour-1-.jpg");
+    url('../images/tour-1-.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,11 +25,9 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .tour-list__item--one {
-      background-image: url("../images/tour-1-1-x.jpg");
+      background-image: url('../images/tour-1-1-x.jpg');
     }
   }
 }
@@ -37,7 +35,7 @@
 .tour-list__item--two {
   max-width: 384px;
   background-image: linear-gradient(0deg, #000000 1%, rgba(0, 0, 0, 0) 60%),
-    url("../images/tour-2.jpg");
+    url('../images/tour-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -46,11 +44,9 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .tour-list__item--two {
-      background-image: url("../images/tour-2-2-x.jpg");
+      background-image: url('../images/tour-2-2-x.jpg');
     }
   }
 }
@@ -58,7 +54,7 @@
 .tour-list__item--three {
   max-width: 384px;
   background-image: linear-gradient(0deg, #000000 1%, rgba(0, 0, 0, 0) 60%),
-    url("../images/tour-3.jpg");
+    url('../images/tour-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,11 +63,9 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .tour-list__item--three {
-      background-image: url("../images/tour-3-3-x.jpg");
+      background-image: url('../images/tour-3-3-x.jpg');
     }
   }
 }
@@ -201,14 +195,27 @@
   margin-left: 12px;
 }
 
-@media (max-width: 1235px) {
+@media (max-width: 1165px) {
+  .tour-list__item {
+    padding-top: 30px;
+  }
+
+  .tour-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.21;
+    color: $whiteColor;
+    max-width: 142px;
+    margin-bottom: 24px;
+  }
+
   .place {
     flex-direction: column;
     row-gap: 20px;
   }
 
   .details {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .details__item:not(:last-of-type) {
@@ -219,3 +226,25 @@
     right: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .tour-decor-text {
+    font-size: 35px;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tour-btn-wrapper {
+    top: 10%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 384px) {
+  .tour-btn-wrapper {
+    top: 17%;
+    left: 5%;
+  }
+}
+

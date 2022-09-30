@@ -18,7 +18,15 @@
 @media (max-width: 1235px) {
   .header {
     flex-direction: column;
-   row-gap: 30px;
-   margin-bottom: 80px;
+    row-gap: 30px;
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 590px) {
+  .header {
+    margin-bottom: 40px; 
   }
 }

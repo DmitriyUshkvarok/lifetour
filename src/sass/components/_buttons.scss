@@ -17,6 +17,12 @@
   }
 }
 
+@media (max-width: 595px) {
+  .hero-btn {
+    margin-bottom: 30px;
+  }
+}
+
 // tour buttons
 .place__btn {
   width: 115px;
@@ -56,6 +62,20 @@
   font-size: --swiper-navigation-size;
   fill: white;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .swipper--tour-next,
+  .swipper--tour-prev,
+  .swipper--eduction-next,
+  .swipper--eduction-prev,
+  .swipper--gallery-next,
+  .swipper--gallery-prev,
+  .swipper--review-next,
+  .swipper--review-prev {
+    width: 25px;
+    height: 20px
+  }
 }
 
 // feedback btn

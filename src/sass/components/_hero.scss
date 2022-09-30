@@ -1,6 +1,6 @@
 .hero {
   background-color: lightslategrey;
-  background-image: url("../images/hero-clouds.svg"), url("../images/hero.jpg");
+  background-image: url('../images/hero-clouds.svg'), url('../images/hero.jpg');
   background-repeat: no-repeat;
   background-position: 0 500px, center;
   background-size: contain, cover;
@@ -15,12 +15,9 @@
   position: relative;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: ("../images/hero-clouds.svg"),
-      url("../images/hero-2x.jpg");
+    background-image: ('../images/hero-clouds.svg'), url('../images/hero-2x.jpg');
   }
 }
 
@@ -51,4 +48,24 @@
   line-height: 1.48;
   color: $whiteColor;
   margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 595px) {
+  .hero {
+    background-position: 80% 0;
+  }
+
+  .hero-text {
+    font-size: 43px;
+  }
 }

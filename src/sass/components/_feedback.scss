@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: dimgrey;
-  background-image: url("../images/review.jpg");
+  background-image: url('../images/review.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,11 +11,9 @@
   padding-bottom: 280px;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .feedback {
-    background-image: url("../images/review-2-x.jpg");
+    background-image: url('../images/review-2-x.jpg');
   }
 }
 
@@ -74,12 +72,18 @@
     padding-top: 150px;
   }
 
-.page-title--feedback{
-  color: $secondColor;
-}
+  .page-title--feedback {
+    color: $secondColor;
+  }
 
   .contacts-form {
     flex-direction: column;
     row-gap: 30px;
+  }
+
+  .contact__name,
+  .contact__tell {
+    margin-right: 0;
+    max-width: 300px;
   }
 }
