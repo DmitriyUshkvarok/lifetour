@@ -28,7 +28,7 @@ var swiper = new Swiper('.eduction-slider', {
     },
     1100: {
       slidesPerView: 5,
-      spaceBetween:10,
+      spaceBetween: 10,
     },
   },
 });
